@@ -64,3 +64,55 @@ E para podermos exibir o código acima sem renderizar, utilizamos as marcações
 O código aqui... "```" crases. 
 
 Na pasta dicas livre se encontram mais resumos de comandos que podem ser úteis.
+
+# Para desenvolver uma lista de itens com links para navegação:
+
+<a name="link"></a>
+# Título Principal.
+- [Um](#LinkAlvoUm)
+- [Dois](#LinkAlvoDois)
+- [Três](#LinkAlvoTres)
+
+<a id="link1"></a>
+## Título 1
+> Loren Ipsum
+Donec nec mattis dui, quis sagittis magna.
+[Topo](#link)
+
+<a id="link2"></a>
+## Título 2
+> Loren Ipsum
+Donec nec mattis dui, quis sagittis magna.
+[Topo](#link)
+
+<a id="link3"></a>
+## Título 3
+> Loren Ipsum
+Donec nec mattis dui, quis sagittis magna.
+[Topo](#link)
+
+```
+<a name="link"></a>
+# Título Principal.
+- [Um](#LinkAlvoUm)
+- [Dois](#LinkAlvoDois)
+- [Três](#LinkAlvoTres)
+
+<a id="link1"></a>
+## Título 1
+> Loren Ipsum
+Donec nec mattis dui, quis sagittis magna.
+[Topo](#link)
+
+<a id="link2"></a>
+## Título 2
+> Loren Ipsum
+Donec nec mattis dui, quis sagittis magna.
+[Topo](#link)
+
+<a id="link3"></a>
+## Título 3
+> Loren Ipsum
+Donec nec mattis dui, quis sagittis magna.
+[Topo](#link)
+```
