@@ -1,118 +1,38 @@
+# Uso do Github - Controle de Versão para desenvolvimento de conteúdo e software
 
-# Git e Github - Versionamento do Software
+### 1. **Gestão de Conteúdo em Etapas (Ciclos de Desenvolvimento)**
 
-*Wiki:* GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.
+Assim como em um ciclo de desenvolvimento de software, o marketing de conteúdo também passa por diferentes  **fases** : planejamento, criação, revisão, publicação e análise de performance. O GitHub, através de seu controle de versão, permite organizar e gerenciar essas etapas de forma estruturada.
 
-## Requisitos:
+Por exemplo, você pode tratar cada peça de conteúdo (como um blog post ou vídeo) como um "projeto" que passa por diferentes versões:
 
-1. Conta de acesso cadastrada no Github.
+* **Branch principal** : O conteúdo final que será publicado.
+* **Branches de desenvolvimento** : Onde as equipes de criação trabalham nas versões preliminares e revisões de conteúdo.
+* **Commits e histórico** : Assim como o GitHub registra cada alteração em um software, ele pode ser usado para rastrear mudanças em textos, vídeos, e outras peças de conteúdo, garantindo transparência e controle de qualidade.
 
-Além de texto poderemos utilizar a linguagem de marcação Markdown para os arquivos, como por exemplo o README.md que abre na visualização do repositório.
+### 2. **Revisões e Aprovações como Pull Requests**
 
-## Implementação
+No ciclo de desenvolvimento de software, os **pull requests** são usados para revisar e aprovar alterações antes de integrar ao projeto final. No marketing de conteúdo, isso pode ser aplicado de maneira semelhante, especialmente em equipes onde diferentes pessoas participam da criação e revisão de peças de conteúdo.
+Cada membro pode sugerir mudanças e, antes de "publicar" o conteúdo final (como lançar uma campanha), a equipe aprova as alterações de maneira organizada e controlada, minimizando erros e garantindo que todas as versões estejam documentadas.
 
-Após a criação do repositório ainda vazio:
+### 3. **Automatização e Publicação Programada (CI/CD)**
 
-1. Trocar o endereçorepositório, pelo endereço correto do seu novo repositório.
+Assim como no desenvolvimento de software, onde usamos **integração contínua e entrega contínua (CI/CD)** para garantir que o software seja testado e lançado de maneira automatizada, podemos aplicar essa ideia em campanhas de marketing.
+Com ferramentas de integração com o GitHub, é possível automatizar a publicação de conteúdo em várias plataformas (blogs, redes sociais, etc.) após a conclusão de certas etapas do ciclo de desenvolvimento.
 
-Ex:
-echo "# endereçorepositório" >> README.md
+Exemplo prático:
 
-```
-git init
-git add README.md
-git commit -m "primeiro commit"
-git branch -M main
-git remote add origin endereçorepositório.git
-git push -u origin main
+* Após a aprovação do conteúdo (pull request), um **workflow** automatizado pode publicar o artigo no blog e compartilhar nas redes sociais, da mesma forma que um software é lançado automaticamente após testes bem-sucedidos.
 
-…push an existing repository
-git remote add origin endereçorepositório.git
-git branch -M main
-git push -u origin main
-```
+### 4. **Ciclos de Iteração**
 
-* Código acima apresentado na inicialização do repositório no Github*.
+No desenvolvimento de software, as equipes geralmente trabalham em **ciclos iterativos** ou sprints, constantemente revisando e melhorando o código. O mesmo conceito pode ser aplicado ao marketing de conteúdo, onde o feedback de campanhas anteriores é usado para aprimorar as próximas.
+O GitHub permite um fácil acompanhamento do progresso, versões anteriores, e ajustes nas estratégias de marketing, assim como acontece em projetos de software.
 
-## Alguns Comandos utilizados:
+### 5. **Repositório Central de Conteúdo**
 
-Clona o repositório remoto:
-```
-git clone endereçorepositório.git
-```
-Mostrar o Status:
-```
-git status
-```
-Linha do tempo:
-```
-git reset --hard CÓDIGOAQUI ( git reflog mostra os códigos )
-```
+O GitHub pode ser utilizado como um **repositório central** para todo o conteúdo e ativos de marketing, similar ao que é feito no desenvolvimento de software. Isso facilita a colaboração entre equipes e garante que todas as versões de um conteúdo estejam documentadas e acessíveis, evitando confusões e retrabalhos.
 
-Para o arquivo README.md , que é um arquivo criado com a linguagem de marcação Markdown:
+---
 
-[Algumas dicas do Github em: ](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet "Github Markdown Cehat Sheet")
-
-No link do Github acima, você encontrará vários códigos como o que utilizamos para apresentar o link acima.
-
-Logo abaixo, o código que utilizamos:
-
-```
-[Algumas dicas do Github em: ](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet "Github Markdown Cheet Sheet")
-```
-E para podermos exibir o código acima sem renderizar, utilizamos as marcações com três "```"
-O código aqui... "```" crases. 
-
-Na pasta dicas livre se encontram mais resumos de comandos que podem ser úteis.
-
-# Para desenvolver uma lista de itens com links para navegação:
-
-<a name="link"></a>
-# Título Principal.
-- [Um](#LinkAlvoUm)
-- [Dois](#LinkAlvoDois)
-- [Três](#LinkAlvoTres)
-
-<a id="link1"></a>
-## Título 1
-> Loren Ipsum
-Donec nec mattis dui, quis sagittis magna.
-[Topo](#link)
-
-<a id="link2"></a>
-## Título 2
-> Loren Ipsum
-Donec nec mattis dui, quis sagittis magna.
-[Topo](#link)
-
-<a id="link3"></a>
-## Título 3
-> Loren Ipsum
-Donec nec mattis dui, quis sagittis magna.
-[Topo](#link)
-
-```
-<a name="link"></a>
-# Título Principal.
-- [Um](#LinkAlvoUm)
-- [Dois](#LinkAlvoDois)
-- [Três](#LinkAlvoTres)
-
-<a id="link1"></a>
-## Título 1
-> Loren Ipsum
-Donec nec mattis dui, quis sagittis magna.
-[Topo](#link)
-
-<a id="link2"></a>
-## Título 2
-> Loren Ipsum
-Donec nec mattis dui, quis sagittis magna.
-[Topo](#link)
-
-<a id="link3"></a>
-## Título 3
-> Loren Ipsum
-Donec nec mattis dui, quis sagittis magna.
-[Topo](#link)
-```
+Com essa abordagem, você pode mostrar como o **controle de versão** e os **ciclos de desenvolvimento de software** podem ser adaptados para otimizar o fluxo de trabalho no marketing de conteúdo, garantindo maior controle, organização e eficiência, especialmente em **projetos iniciantes** que precisam gerenciar recursos de forma eficaz.
